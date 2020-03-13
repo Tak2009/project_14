@@ -32,13 +32,19 @@ class App extends Component {
                             <ResultListWrapper>
                                 {
                                     data.map(item => (
-                                        <ResultList key={item._id}>
+                                        <ResultList key={item._id}
+                                        href={`https://store.steampowered.com/app/${item.ResponseID}`}>
+                                          <ResultList.Image src={item.HeaderImage}/>
                                             <ResultList.Content>
                                                 <ResultList.Title
                                                     dangerouslySetInnerHTML={{
                                                         __html: item.ResponseName
                                                     }}
                                                 />
+                                                <ResultList.Description>
+                                  +                 <p className="releaseDate">${item.ReleaseDate}</p>
+                                  +                 <p className="price">$${item.PriceInitial}</p>
+                                  +             </ResultList.Description>
                                             </ResultList.Content>
                                         </ResultList>
                                     ))
