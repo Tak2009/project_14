@@ -6,7 +6,7 @@ const { ResultListWrapper } = ReactiveList;
 
 class App extends Component {
     render() {
-        return (
+      return (
             <div className="main-container">
                 <ReactiveBase
                     app="steam-search"
