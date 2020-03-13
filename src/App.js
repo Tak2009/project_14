@@ -42,9 +42,9 @@ class App extends Component {
                                                     }}
                                                 />
                                                 <ResultList.Description>
-                                  +                 <p className="releaseDate">${item.ReleaseDate}</p>
-                                  +                 <p className="price">$${item.PriceInitial}</p>
-                                  +             </ResultList.Description>
+                                                   <p className="releaseDate">${item.ReleaseDate}</p>
+                                                   <p className="price">$${item.PriceInitial}</p>
+                                               </ResultList.Description>
                                             </ResultList.Content>
                                         </ResultList>
                                     ))
